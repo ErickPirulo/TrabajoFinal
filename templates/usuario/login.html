@@ -1,190 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-    *{
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    
-}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  {% load staticfiles %}
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
 
-body{
-    background-image: url(https://i.pinimg.com/originals/67/c4/0f/67c40f0d41eb894446d9eefca75f2d6c.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-.flex-container{
-    display:flex;
-}
-
-.form__section{
-    filter:opacity(transparent);
-}
-
-.form__input{
-    margin: 10px 10px;
-    border-bottom: 5px;
-    border-style:groove;
-    padding: 5px 25px;
-    border-color: steelblue;
-    filter:opacity(transparent);
-    border-radius: 10px;
-    filter: drop-shadow(10px 10px 10px black);
-}
-
-.form{
-    display: inline-block;
-    margin: 20px 450px;
-    padding: 10px 125px;
-    box-sizing: content-box;
-    border-radius: 20px;
-    border-style:groove;
-    text-align: center;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.30);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(0.5px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-
-}
-::placeholder{
-    color: black;
-}
-
-.boton{
-    position: relative;
-    display: block;
-    height: 60px;
-    width: 300px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    background-color: transparent;
-    color: rgb(101, 61, 245);
-    font-size: 18px;
-    overflow: hidden;
-    transition: all 500ms ease;
-    border: 2px solid steelblue;
-    margin-bottom: 40px;
-    z-index: 0;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  .boton::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: auto;
-    background-color: #20e2d7;
-    transition: all 500ms ease;
-    z-index: -1;
-  }
-  .btn--1::before {
-    width: 0;
-    height: 100%;
-  }
-  .btn--1:hover {
-    color: black;
-  }
-  .btn--1:hover::before {
-    width: 100%;
-
-}
-
-.texto{
-    color: rgb(101, 61, 245);
-    text-shadow: 5px 5px 5px rgb(133, 103, 243);
-    background-color: transparent;
-}
-.imagen_container{
-    padding: 62px 62px;
-    height: 230px;
-    border-radius: 50%;
-    border-color: steelblue;
-    border-style: solid;
-    filter: opacity(transparent);
-    filter: drop-shadow(20px 0px 15px 15px black);
-
-}
-.img{
-    margin-top: -27px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: transparent;
-    width: 250px;
-}
-.parrafo{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
-
-.link{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-decoration: none;
-}
-.link:hover{
-    color: white;
-}
-.enlace{
-    margin-bottom: 50px;
-}
-
-@media (max-width:700px){
-    .form{
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 100px 100px;
-    }
-}
-
-  </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login5</title>
-    <meta name="author" content="Grupo 11">
-    <link rel="stylesheet" type="text/css" href="test.css">
-    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-</head>
-<body>
-    <div class="flex-container">
-        <form class="form">
-            
-            <div class="imagen_container">
-                <img class="img" src="/templates/usuario/icono2.png" alt="">
-            </div>
-
-            <div class="texto">
-                <h1>Inicia sesión</h1>
-            </div>
-
-            <div class="form__section">
-                 <input  type="username" style="background-color: transparent; text-align: center;" placeholder="Nombre de usuario" class="form__input"; text-aligne= center;>
-            </div>
-            
-            <div class="form__section">
-                 <input type="password" style="background-color: transparent;text-align: center;" placeholder="Contraseña" class="form__input">
-            </div>
-            
-            <div class="content centered-elements">
-                <div>
-                  <button class="boton btn--1">
-                    Iniciar sesión
-                  </button>
-            </div>
-            <div class="enlace">
-                <p class="parrafo">¿Todavia no tienes una cuenta?</p>
-                <a class="link" href="poner link">Crear usuario</a>
-            </div>
-        </form>
+  <link rel="stylesheet" type="text/css" href="{% static 'all.mine.css' %}"/>
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" type="text/css" href="{% static 'icheck-bootstrap.min.css' %}"/>
+  <!-- Theme style -->
+  <link rel="stylesheet" type="text/css" href="{%static 'adminlte.min.css' %}"/>
+ </head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card card-outline card-primary">
+    <div class="card-header text-center">
+      <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
     </div>
-    {% if form.errors %}
-    <p>Su nombre de usuario y contraseña no coinciden. Por favor revise los datos ingresados e intente nuevamente.</p>
-    {% endif %}
+    <div class="card-body">
+      <p class="login-box-msg">Registrate para iniciar sesión</p>
+
+      <form action="../../index3.html" method="post">
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Nombre de usuario">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Contraseña">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Recordarme
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Iniciar</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+      <div class="social-auth-links text-center mt-2 mb-3">
+        <a href="#" class="btn btn-block btn-primary">
+          <i class="fab fa-facebook mr-2"></i> Iniciar con Facebook
+        </a>
+        <a href="#" class="btn btn-block btn-danger">
+          <i class="fab fa-google-plus mr-2"></i> Iniciar con Google+
+        </a>
+      </div>
+      <!-- /.social-auth-links -->
+
+      <p class="mb-1">
+        <a href="forgot-password.html">Olvidé mi contraseña</a>
+      </p>
+      <p class="mb-0">
+        <a href="register.html" class="text-center">Resgistrarse</a>
+      </p>
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
 </body>
 </html>

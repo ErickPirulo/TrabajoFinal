@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JUEGO</title>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="estilojuego.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#login"><i class="fa fa-fw fa-user"></i>Salir</a>
+          <a href="#reglas">Reglas</a>
+          <a href="#about">Nosotros</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    </header>
+
+    <div class="contenedor" id="cajaCuerpo" >
+      <div class="row">
+        <div class="col-sm-12" >
+          <div class="container">
+            <div class="cube">
+              <div class="front" id="face"></div>
+              <div class="back" id="face"></div>
+              <div class="left" id="face"></div>
+              <div class="right" id="face"></div>
+              <div class="top" id="face"></div>
+              <div class="bottom" id="face"></div>
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-12" id="respuestas">
+            <form action="" method="post">
+               <div  class="quiz">
+                  <h3>Aqui va la pregunta</h3>
+
+                <div class="row" id="opciones">
+                <div class="col-sm-6">
+
+                  <div id='block-1' >
+                    <label for='option-1' >
+                      <input type='checkbox' name='option' value='' id='option-1'/>
+                      opcion 1</label>
+                    <span id='result-1'></span>
+                  </div>
+                  <hr />
+
+                  <div id='block-2' >
+                    <label for='option-2' >
+                      <input type='checkbox' name='option' value='' id='option-2'/>
+                      opcion 2</label>
+                    <span id='result-2'></span>
+                  </div>
+
+               </div>
+               <div class="col-sm-6">
+
+                   <div id='block-3' >
+                    <label for='option-3' >
+                      <input type='checkbox' name='option' value='' id='option-3'/>
+                      opcion 3</label>
+                    <span id='result-3'></span>
+                  </div>
+                  <hr />
+                  <div id='block-4' >
+                    <label for='option-4' >
+                      <input type='checkbox' name='option' value='' id='option-4'/>
+                      opcion 4</label>
+                    <span id='result-4'></span>
+                  </div>
+
+                </div>
+            </form>
+          </div>
+
+      </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

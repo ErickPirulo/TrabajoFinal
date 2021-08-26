@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +27,7 @@
 
       <form action="../../index3.html" method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Nombre de usuario">
+          <input name="username" type="" class="form-control" placeholder="Nombre de usuario">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Contraseña">
+          <input name="password" type="password" class="form-control" placeholder="Contraseña">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -53,7 +53,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Iniciar</button>
+            <button type="submit" value="Login" class="btn btn-primary btn-block">Iniciar</button>
           </div>
           <!-- /.col -->
         </div>
@@ -73,7 +73,8 @@
         <a href="forgot-password.html">Olvidé mi contraseña</a>
       </p>
       <p class="mb-0">
-        <a href="register.html" class="text-center">Resgistrarse</a>
+        <a href="/registro2" class="text-center">Resgistrarse</a>
+
       </p>
     </div>
     <!-- /.card-body -->

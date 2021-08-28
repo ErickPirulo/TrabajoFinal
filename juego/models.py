@@ -10,7 +10,6 @@ class Pregunta(models.Model):
     def __str__(self):
         return self.pregunta
 
-
 class Respuesta(models.Model):
     id_pregunta= models.ForeignKey('Pregunta', on_delete=models.CASCADE)
     opcion= models.CharField(max_length=500)

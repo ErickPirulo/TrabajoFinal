@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+
+<!-- Mirrored from wpthemesgrid.com/themes/appmeet/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Aug 2021 15:26:26 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Proyecto Webinfo21 </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="webinfo/images/logo/logo.svg" />-->
+    <link rel="icon" href="../webinfo/images/logo.ico" type="image/x-icon">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+
+    <!-- ========================= CSS here ========================= -->
+    {% load static %}
+    <link href="{% static 'webinfo/css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/LineIcons.2.0.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/tiny-slider.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area style2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand style2" href="">
+                                <img src="{% static 'webinfo/images/favicon.svg' %}" alt="Logo" height="80">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="#home" class="page-scroll active"
+                                            aria-label="Toggle navigation">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#features" class="page-scroll"
+                                            aria-label="Toggle navigation">Historia</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#overview" class="page-scroll"
+                                            aria-label="Toggle navigation">Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#pricing" class="page-scroll"
+                                            aria-label="Toggle navigation">Bibliografía</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#team" class="page-scroll" aria-label="Toggle navigation">Nosotros</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            <div class="button add-list-button">
+                                <a href="../login2" class="btn">Ingresar</a>
+                            </div>
+                            <div class="button add-list-button">
+                                <a href="../registro" class="btn">Registrarse</a>
+                            </div>
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Hero Area -->
+    <section id="home" class="hero-area style2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="hero-content wow fadeInLeft" data-wow-delay=".3s">
+                        <h1>Hola! Buenvenido a nuestro juego</h1>
+                        <p>En ésta página desarrollamos un juego de preguntas y respuestas.
+                            Esperamos sea de tu agrado.</p>
+                        <!--
+                        <form action="#" method="get" target="_blank" class="trial-form">
+                            <input name="email" type="email" placeholder="Your email address">
+                            <div class="button">
+                                <button type="submit" class="btn">A Jugar!</button>
+                            </div>
+                        </form>
+                        -->
+                        <a href="https://www.youtube.com/watch?v=e8PBNcxWVew"
+                            class="glightbox video-button"><i class="lni lni-play"></i><span class="text">Te contamos un
+                                poco sobre el Chaco</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
+                        <video src="{% static 'webinfo/images/demos/Prov.mp4' %}" width="520" height="420" autoplay muted loop alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+    <!-- Start Features Area -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Historia del Chaco</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Provincialización del Chaco</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s"><p style="text-align: justify;">El presente artículo tiene como propósito hacer un breve repaso de la historia de la Provincialización del Chaco destacando las posturas que precedieron a la misma en tanto se manifestaron a favor y en contra. El objetivo último es poder brindar argumentos acerca de por qué el territorio nacional del Chaco no se provincializó antes siendo que para 1918 el territorio ya contaba con una población cercana a los 60.000 habitantes, requisito necesario estipulado en la ley 1532.  </p>
+                        <p style="text-align: justify;">El territorio nacional del Chaco se crea en 1872 y se rige por normas transitorias hasta el 1884, año en el cual se dicta la Ley 1532 que estará vigente hasta la provincialización. Esta ley limitaba el derecho de los territorianos a la elección de concejales municipales y jueces de paz en aquellas jurisdicciones que cumplieran con los requisitos. A su vez, los gobernadores serían designados por el Poder Ejecutivo Nacional con acuerdo del Senado, con un mandato de tres años. Además, dicha ley establecía que en aquellos lugares con una población de 30.000 habitantes o más podrían localizarse legislaturas locales, y en el caso en que el territorio superase los 60.000 habitantes se podría provincializar.</p>
+                        <p style="text-align: justify;">El territorio nacional del Chaco para 1920 ya había cumplido con la exigencia impuesta para ser provincializado ya que contaba con más de 60.000 habitantes. Además, el desarrollo económico y demográfico logrado para la década del 1930 alentaba una transformación política. No obstante, los primeros reclamos por los derechos de los territorianos se remontan al 1900. Con Roca como presidente, el Poder Ejecutivo proyectó una ley en la cual se le permitiría a los territorios nacionales -donde existan al menos tres municipios- mandar un delegado que podría formar parte de las discusiones y presentar proyectos pero <em>no votar</em>, el argumento utilizado para impulsarla eran las dificultades que creaba la organización actual para la acción de los poderes públicos. Sin embargo, como pasó con la mayoría de los proyectos y reclamos hasta 1951 el resultado fue la irresolución por parte de las Cámaras (Viñuelas, 2001).</p>
+                        <p style="text-align: justify;">En la década siguiente, también se presentó un proyecto por parte de un diputado de Capital Federal que pretendía que en las poblaciones que superen los 40.000 habitantes funcionen legislaturas tres meses al año. El argumento esbozado por el diputado arremetía contra la designación de gobernadores por parte del Poder Ejecutivo Nacional, aduciendo que no era posible continuar con un régimen (haciendo referencia a la Ley 1532) en el cual el gobernador no era la cabeza, sino una marioneta que no puede actuar sino a mandatos desde la Capital Federal<a href="#_ftn1" name="_ftnref1">[1]</a> (Viñuelas, 2001).</p>
+                        <p style="text-align: justify;">Los mencionados fueron algunos ejemplos de reclamos que se hicieron desde nación, donde el problema que se visualizaba era <em>la incapacidad de las autoridades residentes</em>. A nivel local, en aquella época el diario “La Voz del Chaco”, integrado en su mayoría por anarquistas y socialistas (Leoni, 2008), fue quien encabezó las disputas por las autonomías territoriales, los puntos de conflicto y discusión eran: “<em>los derechos de los habitantes, la desorganización de los servicios públicos, la inutilidad de la policía, las cárceles y las escuelas (…), la necesidad de una autonomía económica y administrativa para el territorio”<a href="#_ftn2" name="_ftnref2"><strong>[2]</strong></a> </em>que permitiese aumentar su riqueza nacional. A su vez, se planteaba que el gobierno de turno solamente ponía atención a las provincias que tenían derecho a votar, dando a entender que no les era conveniente que otros territorios nacionales sean provincializados.</p>
+                        <p style="text-align: justify;">Como se dijo anteriormente, el territorio nacional para 1920 ya cumplía con los requisitos estipulado por la ley para ser provincializado. ¿Cómo fue el proceso de poblamiento de la región? El mismo estuvo caracterizado en sus inicios por fuertes oleadas inmigratorias, los primeros inmigrantes provenían principalmente de las provincias vecinas y extranjeros (españoles, italianos y paraguayos). Posteriormente, en la década del 1930, llegaron de los países eslavos: ucranianos, yugoslavos, búlgaros y húngaros mayoritariamente. Con ello, para 1935 el territorio contaba con 213.000 habitantes (Leoni, 2008). ¿Por qué entonces no se provincializó sino hasta 1951?</p>
+                        <p style="text-align: justify;">En la década del 20’ los argumentos que se oponían a la provincialización la consideraban prematura dada la escasa ejercitación de los derechos políticos de los territorianos. Los interrogantes que se levantaban eran sobre la <em>capacidad de ejercer un gobierno propio y autonomía política, y si se podría mantener con rentas propias</em> (Viñuelas, 2001). Así, diversos actores, entre ellos la Sociedad Rural del Chaco, consideraban inoportuna la lucha por la autonomía del territorio pero abogaban por la representación parlamentaria.</p>
+                        <p style="text-align: justify;">Con respecto a esto último, Viñuelas (2001) hace una aclaración muy interesante, se manifiesta diciendo que la posición que tomó la Sociedad Rural del Chaco fue y es bastante discutida teniendo en cuenta que la situación del obrero en el territorio era pésima. En la zona del Chaco “La Forestal” ejercía un tremendo poder “<em>(…) a los terratenientes ingleses respondían la policía, los jueces de paz, varias comunas y las sociedades rurales y otras organizaciones similares menores. Extranjeros manejaban la situación a través de contratistas, subcontratistas y, sucesivamente, numerosas subdivisiones jerárquicas hasta llegar a los capataces, que eran quienes estaban en contacto con el trabajador”<a href="#_ftn3" name="_ftnref3">[3]</a>.</em></p>
+                        <p style="text-align: justify;">En la misma década fueron numerosos los proyectos presentados a nivel nacional con la intención de provincializar al Chaco. Los argumentos eran claros, el territorio ya sobrepasaba la cantidad de habitantes requeridas por la ley. Sin embargo, como se mencionó, los intentos no hicieron eco en las Cámaras.</p>
+                        <p style="text-align: justify;">Las preocupaciones de la época podemos resumirlas en la representación en la Cámara de Diputados, la elección de jueces de paz, designación de gobernadores con procedencia del territorio y el derecho a elegir presidente y vicepresidente, entre las más importantes. Estos reclamos provenían de distintos sectores políticos, organizaciones civiles, la prensa, etc. pero el interrogante era si el hombre común apoyaba o no la provincialización. Según Viñuelas (2001), y citándolo a quien otrora fue presidente del municipio de Resistencia, Juan Ramón Lestani, la respuesta era un rotundo no, los trabajadores, dado el estado institucional del momento y la influencia predominante del ambiente de trabajo, no tenían tiempo para preocuparse por esas cosas.</p>
+                        <p style="text-align: justify;">Tratando de responder a la pregunta anteriormente formulada y utilizando lo esbozado por Viñuelas (2001), se podría decir que hasta 1930 los argumentos que obstaculizaron y por ende, impedían la provincialización, fueron: la creencia de que en el territorio no existían personalidades con las capacidades necesarias para gobernar, el temor de que se retrocediera en los progresos alcanzados, y la presión de poderosos intereses económicos y políticos a quienes les convenía mantener la inferioridad política de los territorios.</p>
+                        <p style="text-align: justify;">La participación política de los habitantes del territorio nacional no tuvo mayores cambios en los años precedentes a la llegada del peronismo, como así tampoco cambió la organización política de los territorios nacionales que establecía la Ley N° 1532. No obstante, algunos procesos estaban emergiendo. Los municipios eran válidos interlocutores a nivel nacional como representantes del territorio, y abogaban por la provincialización y el reconocimiento de derechos políticos de los habitantes de la región. A su vez, el periodismo también se hacía eco de los distintos reclamos de los territorios, poniendo el foco de las discusiones sobre los derechos de los territorianos, la designación de gobernadores nativos o con conocimientos sobre la realidad del territorio, y también la provincialización, además de otros temas de interés de la época.         </p>
+                        <p style="text-align: justify;">En el periodo anterior a la provincialización no lograron formarse partidos políticos con un alcance territorial amplio, más bien la actividad política parecía exclusiva del ámbito municipal. Cabe aclarar que la ley 1532 de 1884 establecía que debían radicarse municipalidades en aquellas regiones que superaran los mil habitantes. La misma trajo diversos problemas debido a la fluctuación de la población en general en los distintos territorios. Eso, entre otras cosas, imposibilitaba la formación de una estructura y una identidad partidaria y política<a href="#_ftn4" name="_ftnref4">[4]</a>.</p>
+                        <p style="text-align: justify;">Asimismo, las tensiones de índole política en el territorio iban más allá de los conflictos acecidos a raíz de la mencionada ley. Leoni (2008) explica que existieron ciertos desmanejos, así como arbitrariedades y hasta acciones ilegales cometidas por los gobernadores que crearon un descontento generalizado en la población.</p>
+                        <p style="text-align: justify;">En el ámbito político, el socialismo y el radicalismo eran los partidos que, a partir de la entrada en vigencia de la ley Sáenz Peña, se disputaban los gobiernos municipales. Recién en 1938 José Castells<a href="#_ftn5" name="_ftnref5">[5]</a> organizó la “Concordancia del Chaco”, que logró imponerse en varios municipios. También en la época, vieron sus inicios dos partidos políticos que intentaron exceder el acotado ámbito municipal: el Partido Provincialista de Charata y la Unión Provincialista de Puerto Bermejo (Leoni, 2008).           </p>
+                        <p style="text-align: justify;">Como ya se mencionó, la propia estructura territorial del Chaco dificultaba el establecimiento de estructuras partidarias de escala territorial o la formación de identidades políticas; la actividad política estaba restringida al ámbito urbano y había una carencia de vínculos entre las distintas localidades que componían el territorio. La llegada del peronismo al gobierno nacional trajo consigo importantes transformaciones: se integraron sectores, se territorializó la política y se organizó el Estado provincial, proceso en el cual, la estructura gremial tuvo un rol protagónico.</p>
+                        <p style="text-align: justify;">A partir de mediados de la década del 1940 se crearon numerosos sindicatos. Entre los más importantes, la delegación regional de la Confederación General del Trabajo (CGT) se estableció en Resistencia en 1946<a href="#_ftn6" name="_ftnref6">[6]</a>. El sindicato fue un actor importante por sus demandas por la provincialización.</p>
+                        <p style="text-align: justify;">El peronismo mostró un interés notable por el reconocimiento de los derechos de los territorianos. A estas alturas, año 1947, el territorio nacional del Chaco contaba con una población de 430.000 habitantes aproximadamente, o sea, una población muy por encima de lo requerido para ser provincia. Los sindicatos en esa época, en particular el accionar del “Sindicato Único de Trabajadores Agrarios”, fueron los que impulsaban y demandaban por los ideales de la provincialización. A su vez, la C.G.T de Felipe Gallardo intentaba crear una conciencia popular para reclamar por los derechos correspondientes, las promesas detrás de ello era que la provincialización traería mejoras sanitarias, educacionales y culturales (Viñuelas, 2001).</p>
+                        <p style="text-align: justify;">Es así, como después de varios años de disputas y proyectos, en 1949 con la reforma constitucional se le otorga a los territorianos el derecho de participar en las elecciones presidenciales de la Nación conformando un único distrito con la Capital Federal y las provincias. Tantas luchas y presiones, empezaban a generar frutos. Sin embargo, la deseada provincialización se a dilatar hasta 1951.</p>
+                        <p style="text-align: justify;">Fue Eva Perón quien en Junio de 1951 presentase una nota en el Senado de la Nación solicitando la provincialización del Chaco y de La Pampa aduciendo la existencia de recursos propios y una población suficiente como para explotar sus riquezas y trabajar la tierra. De este modo, la ley N° 14037 de Provincialización se sancionó el 20 de Julio de ese mismo año y se la promulgó el 8 de Agosto, la misma a su vez establecía que los convencionales constituyentes deberían ser elegidos el mismo día que las elecciones presidenciales.</p>
+                        <p style="text-align: justify;">Como era de esperar, en las elecciones de noviembre de 1951 Perón sería reelecto por una amplia mayoría. Alcanzando en Chaco – que votaba por primera vez- una cuantía cercana al 80% de los votos. Así, el primer gobierno peronista de la provincia fue encabezado por Felipe Gallardo en el año 1953, un líder sindical.</p>
+                        <p style="text-align: justify;">En el 1955 se produjo el golpe de Estado y el entonces gobernador de la Provincia Presidente Perón, renunció a su cargo.</p>
+                        <p style="text-align: justify;">Con el golpe, la dictadura toma medidas de persecución contra líderes y ciudadanos peronistas, y se dejan sin efecto las medidas tomadas en el gobierno anterior, a su vez, las nuevas autoridades intervinieron la provincia, la constitución provincial fue dejada sin efecto, y se le devolvió el nombre tradicional, Chaco, que originalmente significa <em>“territorio de caza”</em>.</p>
+                        <p style="text-align: justify;">Posteriormente, el 1 de Mayo de 1957, se estableció la nueva constitución provincial, vigente actualmente con las reformas de 1994.</p></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Features Area -->
+
+    <!-- Start App Info Area -->
+    <section id="overview" class="app-info section">
+        <div class="container">
+            <div class="info-one">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <!-- Start Info Text -->
+                        <div class="info-text wow fadeInLeft" data-wow-delay=".3s">
+                            <div class="main-icon">
+                                <i class="lni lni-inbox"></i>
+                            </div>
+                            <h2>1,25,000 Customers Using The Application!</h2>
+                            <p>Big, small, online, offline, local or other. Size doesn't matter. We work on diverse
+                                projects for top brands as well as for cool startups. Check out some of our favorites.
+                            </p>
+
+                        </div>
+                        <!-- End Info Text -->
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="info-image wow fadeInRight" data-wow-delay=".5s">
+                            <img class="ss1" src="{% static 'webinfo/images/app-ss/lauti-2.jpg' %}" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-one style2">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="info-image wow fadeInLeft" data-wow-delay=".3s">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/e8PBNcxWVew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <!-- Start Info Text -->
+                        <div class="info-text wow fadeInRight" data-wow-delay=".5s">
+                            <div class="main-icon">
+                                <i class="lni lni-layout"></i>
+                            </div>
+                            <h2>Seamless Loyalty</h2>
+                            <p>Collaborate over projects with your team and clients optimised for mobile and tablet
+                                don't
+                                let slow page speeds drive our innovative platform empowers anyone to convert clicks
+                                ou'll
+                                publish your first landing page in minutes.</p>
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- End Info Text -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End App Info Area -->
+
+    <!-- Start Bibliografía Table Area -->
+    <section id="pricing" class="pricing-table section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">INFO</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Bibliografías</h2>
+                    </div>
+
+                    <hr />
+                    <p><span style="font-size: 10pt;"><a href="#_ftnref1" name="_ftn1">[1]</a> CONGRESO NACIONAL. Cámara de Diputados. <em>Diarios de Sesiones Ordinarias. </em>Buenos Aires, 1910, pp. 824, 826-827.</span></p>
+                    <p><span style="font-size: 10pt;"><a href="#_ftnref2" name="_ftn2">[2]</a> Gutierrez Viñuelas, R. (2001), pg. 7</span></p>
+                    <p><span style="font-size: 10pt;"><a href="#_ftnref3" name="_ftn3">[3]</a> Gutierrez Viñuelas, R. (2001), pg. 11</span></p>
+                    <p><span style="font-size: 10pt;"><a href="#_ftnref4" name="_ftn4">[4]</a> A su vez, la misma ley generaba conflictos en cuanto a las atribuciones de los gobiernos municipales, generalmente en cuestiones jurisdiccionales entre municipio y otras autoridades en el territorio.</span></p>
+                    <p><span style="font-size: 10pt;"><a href="#_ftnref5" name="_ftn5">[5]</a> Abogado entrerriano que a la edad de 32 años fue nombrado Gobernador del Territorio Nacional del Chaco por dos períodos. Desarrolló una activa labor por el progreso del Chaco; fomentó la agricultura y la ganadería, generando un avance pronunciado de inmigrantes, obteniendo el Chaco un marcado índice de progreso (Polich de Calvo, 1996).</span></p>
+                    <p><span style="font-size: 10pt;"><a href="#_ftnref6" name="_ftn6">[6]</a> En Mayo de 1951, según comenta Leoni (2015), representantes de la delegación chaqueña de la CGT se entrevistaron con Perón para mostrarle el apoyo a su candidatura y obtuvieron la promesa de la provincialización.</span></p>
+                    <hr />
+                    <li style="text-align: justify;">Archivo Histórico de la Provincia del Chaco “José Alumni”. (7 de Agosto de 2017). 66 años de la Provincialización del Chaco. Diario Norte. Recuperado de: <a href="http://www.diarionorte.com/article/155588/66-anos-de-la-provincializacion-del-chaco">http://www.diarionorte.com/article/155588/66-anos-de-la-provincializacion-del-chaco</a><br><br></li>
+                    <li style="text-align: justify;">Barreto, Anabella (2018). <em style="text-indent: 20px;">La representación corporativa. Estudio de la experiencia de la Provincia Presidente Perón en la aplicación del sistema de representación obrera, proyecciones y posibilidades del modelo en la actualidad</em><span style="font-family: Verdana, Geneva, sans-serif; text-indent: 20px;">.         I Jornadas de Democracia y Desarrollo, Chaco.</span><br><br></li>
+                    <li style="text-align: justify;">Gutierrez Viñuelas, Rodrigo (2001). <em style="text-indent: 20px;">La Provincialización del Chaco. El histórico proceso de un anhelo (1885-1951). </em><span style="font-family: Verdana, Geneva, sans-serif; text-indent: 20px;">Fundación CEDODAL, Buenos Aires. Recuperado de: </span><a style="text-indent: 20px;" href="http://www.ugr.es/~rgutierr/PDF2/LIB%20005.pdf">http://www.ugr.es/~rgutierr/PDF2/LIB%20005.pdf</a><br><br></li>
+                    <li style="text-align: justify;">Leoni de Rosciani, María Silvia (2001). <em style="text-indent: 20px;">Cultura y Política en el Chaco durante la etapa Peronista (1946-1955). </em><span style="font-family: Verdana, Geneva, sans-serif; text-indent: 20px;">Revista Nordeste. Número 16, pg. 96-118. Recuperado de: </span><a style="text-indent: 20px;" href="http://revistas.unne.edu.ar/index.php/nor/article/view/2659/2357">http://revistas.unne.edu.ar/index.php/nor/article/view/2659/2357</a><br><br></li>
+                    <li style="text-align: justify;">Leoni de Rosciani, María Silvia (2008). <em style="text-indent: 20px;">La política en el Chaco en la primera mitad del siglo XX. Estructuras de participación, actores y prácticas. </em><span style="font-family: Verdana, Geneva, sans-serif; text-indent: 20px;">Nuevos Espacios. Nuevos Problemas. Los territorios nacionales</span><strong style="text-indent: 20px;"><em>, </em></strong><span style="font-family: Verdana, Geneva, sans-serif; text-indent: 20px;">Neuquén, Educo.</span><br><br></li>
+                    <li style="text-align: justify;">Leoni de Rosciani, María S. &amp; Solís Carnicier, María del Mar (2015). <em style="text-indent: 20px;">Peronismo, diseño institucional y centralización política. Un análisis a partir de dos espacios subnacionales argentinos: Corrientes y Chaco (1946-1955)</em><span style="font-family: Verdana, Geneva, sans-serif; text-indent: 20px;">. Iberoamericana. America Latina – España – Portugal. Número 60, pg. 61-79.</span><br><br></li>
+                    <li style="text-align: justify;">Mempo, G. (25 de Mayo de 2015). El Chaco y su Historia Electoral. Página 12. Recuperado de: <a style="text-indent: 20px;" href="https://www.pagina12.com.ar/diario/elpais/subnotas/273451-72867-2015-05-25.html">https://www.pagina12.com.ar/diario/elpais/subnotas/273451-72867-2015-05-25.html</a><br><br></li>
+                    <li style="text-align: justify;">Polich de Calvo, Lidia (1996). <em style="text-indent: 20px;">Hombres y Mujeres que hicieron Chaco. </em><span style="font-family: Verdana, Geneva, sans-serif; text-indent: 20px;">Encarnación, Paraguay: Imprecop.</span><br><br></li>
+                    </ul>
+                    <p style="text-align: justify;"> </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--/ End Pricing Table Area -->
+
+    <!-- Start Team -->
+    <section id="team" class="team section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Team</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Meat our team</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Single Team -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team wow fadeInUp" data-wow-delay=".2s">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="{% static 'webinfo/images/team/team_1.jpg' %}" alt="#">
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-behance-original"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                        <!-- End Image -->
+                        <div class="info-head">
+                            <!-- Info Box -->
+                            <div class="info-box">
+                                <h4 class="name"><a href="javascript:void(0)">Erick Ibañez</a></h4>
+                                <span class="designation">Senior Manager</span>
+                            </div>
+                            <!-- End Info Box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team wow fadeInUp" data-wow-delay=".4s">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="{% static 'webinfo/images/team/team_2.jpg' %}" alt="#">
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-behance-original"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                        <!-- End Image -->
+                        <div class="info-head">
+                            <!-- Info Box -->
+                            <div class="info-box">
+                                <h4 class="name"><a href="javascript:void(0)">Franco Amarillas</a></h4>
+                                <span class="designation">Markeitng</span>
+                            </div>
+                            <!-- End Info Box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team wow fadeInUp" data-wow-delay=".6s">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="{% static 'webinfo/images/team/team_3.jpg' %}" alt="#">
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-behance-original"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                        <!-- End Image -->
+                        <div class="info-head">
+                            <!-- Info Box -->
+                            <div class="info-box">
+                                <h4 class="name"><a href="javascript:void(0)">Florencia Bernachea</a></h4>
+                                <span class="designation">Web Developer</span>
+                            </div>
+                            <!-- End Info Box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team wow fadeInUp" data-wow-delay=".8s">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="{% static 'webinfo/images/team/team4.jpeg' %}" alt="#">
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-behance-original"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                        <!-- End Image -->
+                        <div class="info-head">
+                            <!-- Info Box -->
+                            <div class="info-box">
+                                <h4 class="name"><a href="javascript:void(0)">Cesar Pinat</a></h4>
+                                <span class="designation">SEO Expert</span>
+                            </div>
+                            <!-- End Info Box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team wow fadeInUp" data-wow-delay=".8s">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="{% static 'webinfo/images/team/Team_5.png' %}" alt="#">
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-behance-original"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                        <!-- End Image -->
+                        <div class="info-head">
+                            <!-- Info Box -->
+                            <div class="info-box">
+                                <h4 class="name"><a href="javascript:void(0)">Rodrigo Gomez</a></h4>
+                                <span class="designation">Web Developer</span>
+                            </div>
+                            <!-- End Info Box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+
+            </div>
+        </div>
+    </section>
+    <!--/ End Team Area -->
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="{% static 'webinfo/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/wow.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/tiny-slider.js' %}"></script>
+    <script src="{% static 'webinfo/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/count-up.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/main.js' %}"></script>
+    <script type="text/javascript">
+        //========= testimonial 
+        tns({
+            container: '.testimonial-slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            controls: false,
+            controlsText: ['<i class="lni lni-arrow-left"></i>', '<i class="lni lni-arrow-right"></i>'],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                992: {
+                    items: 3,
+                },
+                1170: {
+                    items: 3,
+                }
+            }
+        });
+
+        //========= glightbox
+        GLightbox({
+            'href': 'https://www.youtube.com/watch?v=e8PBNcxWVew',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+
+
+        window.onscroll = function () {
+            var header_navbar = document.querySelector(".navbar-area");
+            var sticky = header_navbar.offsetTop;
+
+            // show or hide the back-top-top button
+            var backToTo = document.querySelector(".scroll-top");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                backToTo.style.display = "flex";
+            } else {
+                backToTo.style.display = "none";
+            };
+
+            if (window.pageYOffset > sticky) {
+                header_navbar.classList.add("sticky");
+            } else {
+                header_navbar.classList.remove("sticky");
+            }
+
+            var logo = document.querySelector('.style2.navbar-brand img')
+            if (window.pageYOffset > sticky) {
+                logo.src = "{% static 'webinfo/images/client-logo/client-4.svg' %}";
+            } else {
+                logo.src = "{% static 'webinfo/images/client-logo/client-4.svg' %}";
+            };
+
+        };
+    </script>
+</body>
+
+
+<!-- Mirrored from wpthemesgrid.com/themes/appmeet/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Aug 2021 15:27:03 GMT -->
+</html>

@@ -15,12 +15,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from usuario.views import home, registro
 
-#from usuario import views as usuario_views
+import usuario
+
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('juego/', include('juego.urls')),
     path('', include('usuario.urls')),
+    path('registro/', usuario.views.registro),
+    path('login/', usuario.views.login),
+    path('login2/', usuario.views.login2),
+    path('logout/', usuario.views.logout),
+    path('home/', usuario.views.home),
+    path('index/', usuario.views.index),
+    path('', usuario.views.index),
 ]
+
+def templates():
+    pass
+

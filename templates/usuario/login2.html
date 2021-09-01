@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+
+<!-- Mirrored from wpthemesgrid.com/themes/appmeet/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Aug 2021 15:27:49 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Login - Proyecto Webinfo21 </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="webinfo/images/log_o.svg" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+
+    <!-- ========================= CSS here ========================= -->
+    {% load static %}
+    <link href="{% static 'webinfo/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/LineIcons.2.0.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/tiny-slider.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader-->
+    <div id="preloader">
+        <div class="appmeet-load"></div>
+    </div>
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="{% static 'webinfo/images/client-logo/client-4.svg' %}" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="../index" aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#features" class="page-scroll"
+                                            aria-label="Toggle navigation">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#overview" class="page-scroll"
+                                            aria-label="Toggle navigation">Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#pricing" class="page-scroll"
+                                            aria-label="Toggle navigation">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#team" class="page-scroll" aria-label="Toggle navigation">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" aria-label="Toggle navigation">Contact</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+
+    <!-- start login section -->
+    <section class="login section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+                    <div class="form-head">
+                        <h4 class="title">Login</h4>
+                        <form action="#!" method="post">
+                            <div class="form-group">
+                                <label>Usuario o Correo</label>
+                                <input name="email" type="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Contraseña</label>
+                                <input name="password" type="password">
+                            </div>
+                            <div class="check-and-pass">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input width-auto"
+                                                id="exampleCheck1">
+                                            <label class="form-check-label">Recuerdame</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <a href="javascript:void(0)" class="lost-pass">Perdiste tu contraseña?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button type="submit" class="btn">Loguearse</button>
+                            </div>
+                            <div class="alt-option">
+                                <span>O</span>
+                            </div>
+                            <div class="socila-login">
+                                <ul>
+                                    <li><a href="javascript:void(0)" class="facebook"><i
+                                                class="lni lni-facebook-original"></i>Login With
+                                            Facebook</a></li>
+                                    <li><a href="javascript:void(0)" class="google"><i class="lni lni-google"></i>Login
+                                            With Google
+                                            Plus</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="outer-link">Aún no tienes cuenta? <a href="../registro">Registrarse</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end login section -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="{% static 'webinfo/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/count-up.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/wow.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/tiny-slider.js' %}"></script>
+    <script src="{% static 'webinfo/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/imagesloaded.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/isotope.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/main.js' %}"></script>
+</body>
+
+
+<!-- Mirrored from wpthemesgrid.com/themes/appmeet/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Aug 2021 15:27:49 GMT -->
+</html>

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+
+<!-- Mirrored from wpthemesgrid.com/themes/appmeet/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Aug 2021 15:26:26 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Proyecto Webinfo21 </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="webinfo/images/logo/logo.svg" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+
+
+    <!-- ========================= CSS here ========================= -->
+    {% load static %}
+    <link href="{% static 'webinfo/css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/LineIcons.2.0.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/tiny-slider.css' %}" rel="stylesheet">
+    <link href="{% static 'webinfo/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader-->
+    <div id="preloader">
+        <div class="appmeet-load"></div>
+    </div>
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area style2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand style2" href="">
+                                <img src="{% static 'webinfo/images/logo/logo.svg' %}" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="#home" class="page-scroll active"
+                                            aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#features" class="page-scroll"
+                                            aria-label="Toggle navigation">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#overview" class="page-scroll"
+                                            aria-label="Toggle navigation">Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#pricing" class="page-scroll"
+                                            aria-label="Toggle navigation">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#team" class="page-scroll" aria-label="Toggle navigation">Nosotros</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            <div class="button add-list-button">
+                                <a href="../login2" class="btn">Ingresar</a>
+                            </div>
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Hero Area -->
+    <section id="home" class="hero-area style2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="hero-content wow fadeInLeft" data-wow-delay=".3s">
+                        <h1>Hola! Buenvenido a nuestro juego</h1>
+                        <p>En ésta página desarrollamos un juego de preguntas y respuestas.
+                            Esperamos sea de tu agrado.</p>
+                        <form action="#" method="get" target="_blank" class="trial-form">
+                            <input name="email" type="email" placeholder="Your email address">
+                            <div class="button">
+                                <button type="submit" class="btn">A Jugar!</button>
+                            </div>
+                        </form>
+                        <a href="https://www.youtube.com/watch?v=e8PBNcxWVew"
+                            class="glightbox video-button"><i class="lni lni-play"></i><span class="text">Te contamos un
+                                poco sobre el Chaco</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
+                        <video src="{% static 'webinfo/images/demos/Prov.mp4' %}" width="520" height="420" autoplay muted loop alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+    <!-- Start Features Area -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Features</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Appmeet has awesome stunning feature</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+                        <i class="lni lni-heart"></i>
+                        <h3>Simple & Light</h3>
+                        <p>Appmeet is a completely creative, lightweight, clean & super responsive app landing page.
+                        </p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
+                        <i class="lni lni-grid-alt"></i>
+                        <h3>Super Responsive</h3>
+                        <p>Appmeet is a completely creative, lightweight, clean & super responsive app landing page.
+                        </p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Feature -->
+                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
+                        <i class="lni lni-bug"></i>
+                        <h3>Bug Free Code</h3>
+                        <p>Appmeet is a completely creative, lightweight, clean & super responsive app landing page.
+                        </p>
+                    </div>
+                    <!-- End Single Feature -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features Area -->
+
+    <!-- Start App Info Area -->
+    <section id="overview" class="app-info section">
+        <div class="container">
+            <div class="info-one">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <!-- Start Info Text -->
+                        <div class="info-text wow fadeInLeft" data-wow-delay=".3s">
+                            <div class="main-icon">
+                                <i class="lni lni-inbox"></i>
+                            </div>
+                            <h2>1,25,000 Customers Using The Application!</h2>
+                            <p>Big, small, online, offline, local or other. Size doesn't matter. We work on diverse
+                                projects for top brands as well as for cool startups. Check out some of our favorites.
+                            </p>
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Download Now</a>
+                            </div>
+                        </div>
+                        <!-- End Info Text -->
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="info-image wow fadeInRight" data-wow-delay=".5s">
+                            <img class="ss1" src="{% static 'webinfo/images/app-ss/l2-hero-image.png' %}" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-one style2">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="info-image wow fadeInLeft" data-wow-delay=".3s">
+                            <img class="ss1" src="{% static 'webinfo/images/app-ss/l2-content-img-1.png' %}" alt="#">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <!-- Start Info Text -->
+                        <div class="info-text wow fadeInRight" data-wow-delay=".5s">
+                            <div class="main-icon">
+                                <i class="lni lni-layout"></i>
+                            </div>
+                            <h2>Seamless Loyalty</h2>
+                            <p>Collaborate over projects with your team and clients optimised for mobile and tablet
+                                don't
+                                let slow page speeds drive our innovative platform empowers anyone to convert clicks
+                                ou'll
+                                publish your first landing page in minutes.</p>
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- End Info Text -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End App Info Area -->
+
+    <!-- Start Achievement Area -->
+    <section class="our-achievement section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
+                        <div class="achievement-icon">
+                            <i class="lni lni-thumbs-up"></i>
+                        </div>
+                        <h3 class="counter"><span id="secondo1" class="countup" cup-end="100">100</span>%</h3>
+                        <p>Satisfaction</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
+                        <div class="achievement-icon">
+                            <i class="lni lni-users"></i>
+                        </div>
+                        <h3 class="counter"><span id="secondo2" class="countup" cup-end="120">120</span>K</h3>
+                        <p>Happy Users</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
+                        <div class="achievement-icon">
+                            <i class="lni lni-download"></i>
+                        </div>
+                        <h3 class="counter"><span id="secondo3" class="countup" cup-end="125">125</span>k+</h3>
+                        <p>Downloads</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
+                        <div class="achievement-icon">
+                            <i class="lni lni-cup"></i>
+                        </div>
+                        <h3 class="counter"><span id="secsondo3" class="countup" cup-end="50">50</span>+</h3>
+                        <p>Winning Award</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Achievement Area -->
+
+    <!-- Start Pricing Table Area -->
+    <section id="pricing" class="pricing-table section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">pricing</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Pricing Plan</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".4s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Freelancer</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2 class="amount">$24<span class="duration">/mo</span></h2>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
+                            </ul>
+                            <!-- End Table List -->
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Buy Freelancer</a>
+                            </div>
+                        </div>
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".6s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Startup</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2 class="amount">$32<span class="duration">/mo</span></h2>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
+                            </ul>
+                            <!-- End Table List -->
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Buy Startup</a>
+                            </div>
+                        </div>
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".8s">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Enterprise</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2 class="amount">$48<span class="duration">/mo</span></h2>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Start Table Content -->
+                        <div class="table-content">
+                            <!-- Table List -->
+                            <ul class="table-list">
+                                <li><i class="lni lni-checkmark-circle"></i> Cras justo odio.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Dapibus ac facilisis in.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Morbi leo risus.</li>
+                                <li><i class="lni lni-checkmark-circle"></i> Potenti felis, in cras ligula.</li>
+                            </ul>
+                            <!-- End Table List -->
+                            <div class="button">
+                                <a href="javascript:void(0)" class="btn">Buy Enterprise</a>
+                            </div>
+                        </div>
+                        <!-- End Table Content -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Pricing Table Area -->
+
+    <!-- Start Team -->
+    <section id="team" class="team section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Team</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Meat our team</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Single Team -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team wow fadeInUp" data-wow-delay=".2s">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="{% static 'webinfo/images/team/team_1.jpg' %}" alt="#">
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-behance-original"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                        <!-- End Image -->
+                        <div class="info-head">
+                            <!-- Info Box -->
+                            <div class="info-box">
+                                <h4 class="name"><a href="javascript:void(0)">Erick Ibañez</a></h4>
+                                <span class="designation">Senior Manager</span>
+                            </div>
+                            <!-- End Info Box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team wow fadeInUp" data-wow-delay=".4s">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="{% static 'webinfo/images/team/team_2.jpg' %}" alt="#">
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-behance-original"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                        <!-- End Image -->
+                        <div class="info-head">
+                            <!-- Info Box -->
+                            <div class="info-box">
+                                <h4 class="name"><a href="javascript:void(0)">Franco Amarillas</a></h4>
+                                <span class="designation">Markeitng</span>
+                            </div>
+                            <!-- End Info Box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team wow fadeInUp" data-wow-delay=".6s">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="{% static 'webinfo/images/team/team_3.jpg' %}" alt="#">
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-behance-original"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                        <!-- End Image -->
+                        <div class="info-head">
+                            <!-- Info Box -->
+                            <div class="info-box">
+                                <h4 class="name"><a href="javascript:void(0)">Florencia Bernachea</a></h4>
+                                <span class="designation">Web Developer</span>
+                            </div>
+                            <!-- End Info Box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team wow fadeInUp" data-wow-delay=".8s">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="{% static 'webinfo/images/team/team4.jpeg' %}" alt="#">
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-behance-original"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                        <!-- End Image -->
+                        <div class="info-head">
+                            <!-- Info Box -->
+                            <div class="info-box">
+                                <h4 class="name"><a href="javascript:void(0)">Cesar Pinat</a></h4>
+                                <span class="designation">SEO Expert</span>
+                            </div>
+                            <!-- End Info Box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-team wow fadeInUp" data-wow-delay=".8s">
+                        <!-- Image -->
+                        <div class="image">
+                            <img src="{% static 'webinfo/images/team/Team_5.png' %}" alt="#">
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-behance-original"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                        <!-- End Image -->
+                        <div class="info-head">
+                            <!-- Info Box -->
+                            <div class="info-box">
+                                <h4 class="name"><a href="javascript:void(0)">Rodrigo Gomez</a></h4>
+                                <span class="designation">Web Developer</span>
+                            </div>
+                            <!-- End Info Box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Team -->
+
+            </div>
+        </div>
+    </section>
+    <!--/ End Team Area -->
+
+    <!-- Start Newsletter Area -->
+    <section class="section newsletter">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="image">
+                        <img src="{% static 'webinfo/images/newsletter/newsletter-img.png' %}" alt="#">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="content">
+                        <h5>Join our community</h5>
+                        <h3>Get latest app updates<br> Right at your inbox</h3>
+                        <form action="#" method="get" target="_blank" class="newsletter-form">
+                            <input name="email" type="email" placeholder="Your email address">
+                            <div class="button">
+                                <button type="submit" class="btn">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Newsletter Area -->
+
+    <!-- Start Call Action Area -->
+    <section class="call-action">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12">
+                    <div class="text">
+                        <h2>Ready to dive in?<span>Start your free trial today.</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="button">
+                        <a href="javascript:void(0)" class="btn">Start free trial
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-alt">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Call Action Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer style-2">
+        <div class="container">
+            <div class="top-content">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="logo">
+                            <a href="../index">
+                                <img src="{% static 'webinfo/images/logo/logo.svg' %}" alt="#">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="javascript:void(0)">Home</a></li>
+                                <li><a href="javascript:void(0)">About Us</a></li>
+                                <li><a href="javascript:void(0)">Blog</a></li>
+                                <li><a href="javascript:void(0)">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-content">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <p class="copyright-text">Designed and Developed by <a href="https://wpthemesgrid.com/"
+                                rel="nofollow" target="_blank">WpthemesGrid</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <ul class="footer-social">
+                            <li><a href="javascript:void(0)"><i class="lni lni-facebook-original"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="{% static 'webinfo/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/wow.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/tiny-slider.js' %}"></script>
+    <script src="{% static 'webinfo/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/count-up.min.js' %}"></script>
+    <script src="{% static 'webinfo/js/main.js' %}"></script>
+    <script type="text/javascript">
+        //========= testimonial 
+        tns({
+            container: '.testimonial-slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            controls: false,
+            controlsText: ['<i class="lni lni-arrow-left"></i>', '<i class="lni lni-arrow-right"></i>'],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                992: {
+                    items: 3,
+                },
+                1170: {
+                    items: 3,
+                }
+            }
+        });
+
+        //========= glightbox
+        GLightbox({
+            'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+
+
+        window.onscroll = function () {
+            var header_navbar = document.querySelector(".navbar-area");
+            var sticky = header_navbar.offsetTop;
+
+            // show or hide the back-top-top button
+            var backToTo = document.querySelector(".scroll-top");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                backToTo.style.display = "flex";
+            } else {
+                backToTo.style.display = "none";
+            };
+
+            if (window.pageYOffset > sticky) {
+                header_navbar.classList.add("sticky");
+            } else {
+                header_navbar.classList.remove("sticky");
+            }
+
+            var logo = document.querySelector('.style2.navbar-brand img')
+            if (window.pageYOffset > sticky) {
+                logo.src = "{% static 'webinfo/images/client-logo/client-4.svg' %}";
+            } else {
+                logo.src = "{% static 'webinfo/images/client-logo/client-4.svg' %}";
+            };
+
+        };
+    </script>
+</body>
+
+
+<!-- Mirrored from wpthemesgrid.com/themes/appmeet/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Aug 2021 15:27:03 GMT -->
+</html>

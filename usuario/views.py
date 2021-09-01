@@ -41,4 +41,8 @@ def logout(request):
     return redirect('/')
 
 def home(request):
-    return render(request, 'usuario/home.html')
+    return render(request, '../templates/index.html')
+def index(request):
+    return render(request, '../templates/index.html')
+def login2(request):
+    return render(request, 'usuario/login2.html')

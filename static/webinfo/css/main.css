@@ -1615,7 +1615,7 @@ ol {
 }
 
 .core-features .single-feature::before {
-  position: absolute;
+  position: left;
   content: "";
   left: 0;
   bottom: 0;

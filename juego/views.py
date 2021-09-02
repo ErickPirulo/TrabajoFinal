@@ -5,11 +5,11 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-@login_required(login_url='/login')
+@login_required(login_url='../login')
 def listar_preguntas(request):
     if request.method == "POST":
         resultado = 0
-        for i in range(1,4):
+        for i in range(1,11):
             opcion = Respuesta.objects.get(pk=request.POST[str(i)])
             resultado += opcion.puntaje
         Partida.objects.create(usuario=request.user, fecha=datetime.now, resultado= resultado)

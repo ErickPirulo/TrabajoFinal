@@ -4,8 +4,9 @@
 }
 body{
     min-height: 100vh;
-    background-image: url(imagenes/fondoazul.png);
-    
+    background-image: url(static/fondo.jpg);
+  
+
     margin: 0px;
 }
 .flex-container{

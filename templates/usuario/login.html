@@ -76,15 +76,15 @@
                                     <li class="nav-item">
                                         <a href="../index#team" aria-label="Toggle navigation">Nosotros</a>
                                     </li>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../login" class="btn">Iniciar Sesión</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../registro" class="btn">Registrarse</a>
+                                    </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
-                            <div class="button add-list-button">
-                                <a href="../login2" class="btn">Ingresar</a>
-                            </div>
-                            <div class="button add-list-button">
-                                <a href="../registro" class="btn">Registrarse</a>
-                            </div>
-                        </nav>
                         <!-- End Navbar -->
                     </div>
                 </div>
@@ -101,14 +101,16 @@
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
                     <div class="form-head">
                         <h4 class="title">Iniciar Sesión</h4>
-                        <form action="#!" method="post">
+                        <form action="/admin/login/?next=/admin/" method="post">
+                            {% csrf_token %}
                             <div class="form-group">
-                                <label>Usuario o Correo</label>
-                                <input name="email" type="email">
+                                <label class="required" for="id_username">Usuario o Correo</label>
+                                <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" required id="id_username">
                             </div>
                             <div class="form-group">
-                                <label>Contraseña</label>
-                                <input name="password" type="password">
+                                <label class="required" for="id_password">Contraseña</label>
+                                <input type="password" name="password" autocomplete="current-password" required id="id_password">
+                                <input type="hidden" name="next" value="/admin/">
                             </div>
                             <div class="check-and-pass">
                                 <div class="row align-items-center">
@@ -127,7 +129,7 @@
                             <div class="button">
                                 <button type="submit" class="btn">Loguearse</button>
                             </div>
-                            <div class="alt-option">
+                            <!--<div class="alt-option">
                                 <span>O</span>
                             </div>
                             <div class="socila-login">
@@ -140,7 +142,7 @@
                                             Plus</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>-->
                             <p class="outer-link">Aún no tienes cuenta? <a href="../registro">Registrarse</a>
                             </p>
                         </form>

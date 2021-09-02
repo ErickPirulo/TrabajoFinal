@@ -1096,7 +1096,7 @@ ol {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title {
-    padding: 0px 200px;
+    padding: 0px 20px;
     margin-bottom: 70px;
   }
 }
@@ -2841,7 +2841,7 @@ ol {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area .hero-content {
     padding-right: 0;
-    padding: 0px 120px;
+    padding: 0px  20px;
   }
 }
 
@@ -4736,7 +4736,7 @@ ol {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 999px) {
   .pricing-table .section-title {
     margin-bottom: 20px;
   }

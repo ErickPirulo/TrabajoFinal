@@ -44,5 +44,4 @@ def home(request):
     return render(request, '../templates/index.html')
 def index(request):
     return render(request, '../templates/index.html')
-def login2(request):
-    return render(request, 'usuario/login2.html')
+

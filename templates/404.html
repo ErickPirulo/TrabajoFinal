@@ -9,7 +9,7 @@
   <title>Appmeet - Startup, App & SaaS HTML Template.</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+  <link rel="icon" href="../webinfo/images/logo.ico" type="image/x-icon">
   <!-- Place favicon.ico in the root directory -->
 
   <!-- Web Font -->
@@ -18,8 +18,9 @@
 
 
   <!-- ========================= CSS here ========================= -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  {% load static %}
+  <link href="{% static 'webinfo/css/animate.css' %}" rel="stylesheet">
+  <link href="{% static 'webinfo/css/main.css' %}" rel="stylesheet">
 
 </head>
 
@@ -47,7 +48,7 @@
             <h2>Oops! Page Not Found!</h2>
             <p>The page you are looking for does not exist.<br> It might have been moved or deleted.</p>
             <div class="button">
-              <a href="index.html" class="btn">Back to Home</a>
+              <a href="../index" class="btn">Volver al Inicio</a>
             </div>
           </div>
         </div>
@@ -57,7 +58,7 @@
   <!-- End Error Area -->
 
   <!-- ========================= JS here ========================= -->
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="{% static 'webinfo/js/bootstrap.min.js' %}"></script>
   <script>
     window.onload = function () {
       window.setTimeout(fadeout, 500);

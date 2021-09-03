@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 @login_required(login_url='../login')
-def listar_preguntas(request):
+def juego(request):
     if request.method == "POST":
         resultado = 0
         for i in range(1,11):
@@ -21,4 +21,4 @@ def listar_preguntas(request):
             respuestas = Respuesta.objects.filter(id_pregunta=item.id)
             data[item.pregunta]= respuestas
 
-        return render(request, 'juego/listar_preguntas.html', {"preguntas":data})
+        return render(request, 'juego/juego.html', {"preguntas":data})

@@ -2,7 +2,7 @@ body {
 min-height: 100vh;
 width:100%;
 margin: 0px;
-background-image:url("imagenes/fondo.jpg") ;
+background-color: blue ;
 background-size:cover;
 }
 header{
@@ -124,38 +124,38 @@ margin: 0px;
 }
 
 .front{
-    background-image: url("imagenes/estrella.jpg");
+    background-image: url("../images/dado/estrella.jpg");
     transform: translateZ(50px);
     background-size: 95px 95px;
 
 }
 
 .back{
-    background-image: url("imagenes/deporte.jpg");
+    background-image: url("../images/dado/deporte.jpg");
     transform: rotateY(180deg) translateZ(50px);
     background-size: 95px 95px;
 }
 
 .left{
-    background-image: url("imagenes/ciencia.jpg");
+    background-image: url("../images/dado/ciencia.jpg");
     transform: rotateY(-90deg) translateZ(50px);
     background-size: 95px 95px;
 }
 
 .right{
-    background-image: url("imagenes/entretenimiento.jpg");
+    background-image: url("../images/dado/entretenimiento.jpg");
     transform: rotateY(90deg) translateZ(50px);
     background-size: 95px 95px;
 }
 
 .top{
-    background-image: url("imagenes/geografia.jpg");
+    background-image: url("../images/dado/geografia.jpg");
     transform: rotateX(90deg) translateZ(50px);
     background-size: 95px 95px;
 }
 
 .bottom{
-    background-image: url("imagenes/historia.jpg");
+    background-image: url("../images/dado/historia.jpg");
     transform: rotateX(-90deg) translateZ(50px);
     background-size: 95px 95px;
 }

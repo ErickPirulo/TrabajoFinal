@@ -41,9 +41,6 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-
-<script>
-   
     // remove the start button when clicked
 $('#start').on('click', function(){
     $('#start').remove();
@@ -191,4 +188,4 @@ var game = {
     }
 
 }
-  </script>
+  

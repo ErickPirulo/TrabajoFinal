@@ -44,4 +44,6 @@ def home(request):
     return render(request, '../templates/index.html')
 def index(request):
     return render(request, '../templates/index.html')
+def prueba(request):
+    return render(request, '../templates/juegos/prueba.html')
 

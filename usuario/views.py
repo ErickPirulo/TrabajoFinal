@@ -6,6 +6,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as do_login
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout as do_logout
 
 def login(request):
     form = AuthenticationForm()
@@ -32,10 +34,11 @@ def registro(request):
             user = form.save()
             if user is not None:
                 do_login(request, user)
-                return redirect('/')
+                return redirect('/juego')
     return render(request, "usuario/registro.html", {'form': form})
 
-from django.contrib.auth import logout as do_logout
+
+@login_required(login_url='../login')
 def logout(request):
     do_logout(request)
     return redirect('/')

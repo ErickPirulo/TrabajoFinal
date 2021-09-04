@@ -1,3 +1,5 @@
+{% load static %}
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,22 +13,68 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="estilojuego.css">
+    <link  rel="stylesheet" href="{% static 'webinfo/css/estilojuego.css' %}">
+    
+    
+   
 </head>
 
 <body>
 
-    <header>
-        <div class="topnav" id="myTopnav">
-          <a href="#home" class="active">Home</a>
-          <a href="#login"><i class="fa fa-fw fa-user"></i>Salir</a>
-          <a href="#reglas">Reglas</a>
-          <a href="#about">Nosotros</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-    </header>
+  <header class="header navbar-area style2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="nav-inner">
+                    <!-- Start Navbar -->
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand style2" href="">
+                            <img src="{% static 'webinfo/images/estrategia.svg' %}" alt="Logo" height="80">
+                        </a>
+                        <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                            <ul id="nav" class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="#home" class="page-scroll active"
+                                        aria-label="Toggle navigation">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#features" class="page-scroll"
+                                        aria-label="Toggle navigation">Historia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#imagenes" class="page-scroll"
+                                        aria-label="Toggle navigation">Imágenes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#bibliografia" class="page-scroll"
+                                        aria-label="Toggle navigation">Bibliografía</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#team" class="page-scroll" aria-label="Toggle navigation">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../login" class="btn">Cerrar Sesion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../registro" class="btn">Registrarse</a>
+                                </li>
+                            </ul>
+                        </div> <!-- navbar collapse -->
+
+                    </nav>
+                    <!-- End Navbar -->
+                </div>
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</header>
 
     <div class="contenedor" id="cajaCuerpo" >
       <div class="row">
@@ -41,54 +89,28 @@
               <div class="bottom" id="face"></div>
             </div>
           </div>
-        </div>
-          <div class="col-sm-12" id="respuestas">
-            <form action="" method="post">
-               <div  class="quiz">
-                  <h3>Aqui va la pregunta</h3>
-
-                <div class="row" id="opciones">
-                <div class="col-sm-6">
-
-                  <div id='block-1' >
-                    <label for='option-1' >
-                      <input type='checkbox' name='option' value='' id='option-1'/>
-                      opcion 1</label>
-                    <span id='result-1'></span>
-                  </div>
-                  <hr />
-
-                  <div id='block-2' >
-                    <label for='option-2' >
-                      <input type='checkbox' name='option' value='' id='option-2'/>
-                      opcion 2</label>
-                    <span id='result-2'></span>
-                  </div>
-
-               </div>
-               <div class="col-sm-6">
-
-                   <div id='block-3' >
-                    <label for='option-3' >
-                      <input type='checkbox' name='option' value='' id='option-3'/>
-                      opcion 3</label>
-                    <span id='result-3'></span>
-                  </div>
-                  <hr />
-                  <div id='block-4' >
-                    <label for='option-4' >
-                      <input type='checkbox' name='option' value='' id='option-4'/>
-                      opcion 4</label>
-                    <span id='result-4'></span>
-                  </div>
-
-                </div>
-            </form>
-          </div>
-
+        </div>          
       </div>
+      <div class="container">
+        <div id="wrapper">
+            <div class="jumbotron">
+                    <div class="text-center">
+                      <h1>{{set_info.set_category}} Quiz on {{set_info.set_topic}}</h1> 
+                    </div>
+                   <!-- <h3>Instructions:</h3>
+                    <h4>1. This trivia quiz contains 5 questions</h4>
+                    <h4>2. You will get 30 seconds for each question</h4>
+                    <h4>3. There will be 3 options for each question</h4>
+                    <h4>4. The result will contain number of correct answers, unattempted answers and wrong answers.</h4> <br> -->
+                    <div class="text-center">
+                    <a id="start" class="btn btn-primary btn-lg" href="#" role="button">Start!</a>
+                    </div> 
+            </div>
+            <div id="subwrapper"> </div>
+        </div>
     </div>
+   
 
 </body>
-<script src="script.js"></script>
+<script src="{% static 'webinfo/js/scriptJuego.js' %}"></script>
 </html>
